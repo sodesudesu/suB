@@ -35,11 +35,31 @@ dev.off()
 
 ### サイコロ100個を100000回投げる。
 x = 0
-for (i in 1:100){
+for (i in 1:1000){
     x = x + sample(1:6, 100000, replace=TRUE)
 }
 
-png("../fig/100x10.png", width=640, height=480, type="cairo")
-hist(x/100, breaks = seq(min(x/100), max(x/100), length.out = 50),
+# 縦軸頻度のグラフ
+png("../fig/1000x10.png", width=640, height=480, type="cairo")
+hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
      xlab="出た目の平均値", ylab="頻度", main="")
+dev.off()
+
+# 面積1になるグラフ
+png("../fig/1000x10-2.png", width=640, height=480, type="cairo")
+hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
+     xlab="出た目の平均値", ylab="", main="", freq = FALSE)
+dev.off()
+
+# 正規分布をかく関数
+gauss = function(mu, sig2){
+    return(
+        1 / sqrt(2 * pi * sig2) * exp(- 1 / 2 * (x - mu)^2 / sig2)
+    )
+}
+
+png("../fig/1000x10-3.png", width=640, height=480, type="cairo")
+hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
+     xlab="出た目の平均値", ylab="頻度", main="", freq = FALSE)
+par(new = TRUE)
 dev.off()
