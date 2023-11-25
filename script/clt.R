@@ -6,10 +6,11 @@ rm(list = ls())
 
 ### サイコロ1つを10万回投げる。
 x = sample(1:6, 100000, replace=TRUE) # 10万個の乱数
-#barplot(table(c(x,1:5)) - 1) # histの代わりに棒グラフを使う
 png("../fig/1x10.png", width=640, height=480, type="cairo")
-hist(x, breaks = 0.5:6.5,
-     xlab="サイコロの目", ylab="頻度", main="")
+barplot(table(c(x, 1:5)) - 1,
+        xlab="サイコロの目", ylab="頻度", main="")
+#hist(x, breaks = 0.5:6.5,
+#     xlab="サイコロの目", ylab="頻度", main="")
 dev.off()
 
 ### サイコロ2つを10万回投げる。
@@ -18,8 +19,10 @@ y = sample(1:6, 100000, replace = TRUE) # 10万個の乱数
 ave = (x + y) / 2
 
 png("../fig/2x10.png", width=640, height=480, type="cairo")
-hist(ave, breaks = 0.5:6.5,
-     xlab = "出た目の平均値", ylab = "頻度", main = "")
+#hist(ave, breaks = 0.5:6.5,
+#     xlab = "出た目の平均値", ylab = "頻度", main = "")
+barplot(table(c(ave, 1:5)) - 1,
+        xlab="サイコロの目", ylab="頻度", main="")
 dev.off()
 
 ### サイコロ3つを10万回投げる。
@@ -29,20 +32,24 @@ z = sample(1:6, 100000, replace = TRUE) # 10万個の乱数
 ave = (x + y + z) / 3
 
 png("../fig/3x10.png", width=640, height=480, type="cairo")
-hist(ave, breaks = 0.5:6.5,
-     xlab = "出た目の平均値", ylab = "頻度", main = "")
+#hist(ave, breaks = 0.5:6.5,
+#     xlab = "出た目の平均値", ylab = "頻度", main = "")
+barplot(table(c(ave, 1:5)) - 1,
+        xlab="サイコロの目", ylab="頻度", main="")
 dev.off()
 
 ### サイコロ100個を100000回投げる。
 x = 0
-for (i in 1:1000){
+for (i in 1:100){
     x = x + sample(1:6, 100000, replace=TRUE)
 }
 
 # 縦軸頻度のグラフ
 png("../fig/1000x10.png", width=640, height=480, type="cairo")
-hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
-     xlab="出た目の平均値", ylab="頻度", main="")
+#hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
+#     xlab="出た目の平均値", ylab="頻度", main="")
+barplot(table(c(x/100, 1:5)) - 1,
+        xlab="サイコロの目", ylab="頻度", main="")
 dev.off()
 
 # 面積1になるグラフ
