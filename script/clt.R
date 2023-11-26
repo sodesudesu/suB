@@ -54,19 +54,25 @@ dev.off()
 
 # 面積1になるグラフ
 png("../fig/1000x10-2.png", width=640, height=480, type="cairo")
-hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
-     xlab="出た目の平均値", ylab="", main="", freq = FALSE)
+#hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
+#     xlab="出た目の平均値", ylab="", main="", freq = FALSE)
+barplot((table(c(x/100, 1:5)) - 1) / sum(table(c(x/100, 1:5)) - 1),
+        xlab="サイコロの目", ylab="", main="")
 dev.off()
 
 # 正規分布をかく関数
-gauss = function(mu, sig2){
+mu = 3.5
+sig2 = 35/1200
+gauss = function(x){
     return(
-        1 / sqrt(2 * pi * sig2) * exp(- 1 / 2 * (x - mu)^2 / sig2)
+        1 / sqrt(2 * pi * 35/1200) * exp(- 1 / 2 * (x - 3.5)^2 / (35/1200))
     )
 }
 
 png("../fig/1000x10-3.png", width=640, height=480, type="cairo")
-hist(x/1000, breaks = seq(min(x/1000), max(x/1000), length.out = 80),
+hist(x/100, breaks = seq(min(x/100), max(x/100), length.out = 38),
      xlab="出た目の平均値", ylab="頻度", main="", freq = FALSE)
-par(new = TRUE)
+#barplot((table(c(x/100, 1:5)) - 1) / sum(table(c(x/100, 1:5)) - 1),
+#        xlab="サイコロの目", ylab="", main="")
+curve(gauss(x), add=TRUE, col="red")
 dev.off()
