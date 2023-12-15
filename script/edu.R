@@ -9,7 +9,7 @@ aca = data2020[order(data2020$ratio, decreasing=FALSE),]
 
 png("../fig/edu1.png", width=640, height=780, type="cairo")
 par(mar = c(5, 14, 4, 2) + 0.1)
-barplot(aca$ratio, names.arg = aca$pre, las = 1, horiz = TRUE, main = "大学進学率2020")
+barplot(aca$ratio, names.arg = aca$pre, las = 1, horiz = TRUE, main = "高校卒業後進学率2020")
 dev.off()
 
 png("../fig/edu2.png", width=600, height=600, type="cairo")
