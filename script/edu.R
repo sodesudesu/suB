@@ -13,7 +13,7 @@ barplot(aca$ratio, names.arg = aca$pre, las = 1, horiz = TRUE, main = "大学進
 dev.off()
 
 png("../fig/edu2.png", width=640, height=780, type="cairo")
-plot(NULL, xlim=c(1,2), ylim=c(20,80),
+plot(NULL, xlim=c(1,2), ylim=c(30,80),
      xlab="合計特殊出生率", ylab="大学進学率")
 text(aca$fert, aca$ratio, aca$pre)
 dev.off()
