@@ -10,3 +10,4 @@
 ### おまけ
 
 - [iTunesの再生回数をグラフ化](art/music.md)
+- [大学進学率の地域差](art/edu.md)
