@@ -9,8 +9,8 @@
 2回のうち、表が1度も出ない（つまり$`X = 0`$である）確率$`P(X=0)`$は、
 ```math
 \begin{eqnarray}
-P(X=0) &=& P(\text{（1回目裏）}) \times P(\text{（2回目裏）}) 
-&=& \frac{1}{2} \times \frac{1}{2} 
+P(X=0) &=& P(\text{1回目裏}) \times P(\text{2回目裏}) \
+&=& \frac{1}{2} \times \frac{1}{2} \
 &=& \frac{1}{4}
 \end{eqnarray}
 ```
@@ -18,8 +18,8 @@ P(X=0) &=& P(\text{（1回目裏）}) \times P(\text{（2回目裏）})
 2投のうち、表が1回だけ出る確率$`P(X=1)`$は、
 ```math
 \begin{eqnarray}
-P(X=1) &=& P(\text{（1回目表）}) \times P(\text{（2回目裏）}) +P(\text{（1回目裏）}) \times P(\text{（2回目表）}) 
-&=& \frac{1}{2} \times \frac{1}{2} + \frac{1}{2} \times \frac{1}{2} 
+P(X=1) &=& P(\text{1回目表}) \times P(\text{2回目裏}) +P(\text{1回目裏}) \times P(\text{2回目表}) \
+&=& \frac{1}{2} \times \frac{1}{2} + \frac{1}{2} \times \frac{1}{2} \
 &=& \frac{1}{2}
 \end{eqnarray}
 ```
@@ -27,8 +27,8 @@ P(X=1) &=& P(\text{（1回目表）}) \times P(\text{（2回目裏）}) +P(\text
 2回とも表が出る確率$`P(X=2)`$は、
 ```math
 \begin{eqnarray}
-P(X=2) &=& P(\text{（1回目表）}) \times P(\text{（2回目表）}) 
-&=& \frac{1}{2} \times \frac{1}{2} 
+P(X=2) &=& P(\text{1回目表}) \times P(\text{2回目表}) \
+&=& \frac{1}{2} \times \frac{1}{2} \
 &=& \frac{1}{4}
 \end{eqnarray}
 ```
