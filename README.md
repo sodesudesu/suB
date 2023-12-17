@@ -5,7 +5,15 @@
 
 ## もくじ
 
+:bearded_person_tone1:
+統計的な手法を学ぶための下ごしらえ：
+
+- [確率分布とは](art/pb.md)
+- [確率分布の例](art/pb_eg.md)
 - [中心極限定理](art/clt2.md)
+
+:bearded_person_tone1:
+統計的な手法：
 
 ### おまけ
 

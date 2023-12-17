@@ -83,10 +83,25 @@ for(i in 1:n){
 # 正規分布をかく関数
 mu = 50
 sig = sqrt(100/2/2)
-gauss = dnorm(0:n, mean = mu, sd = sig)
+gauss = function(x, mu, sig) {
+    dnorm(x, mean = mu, sd = sig)
+}
 
 png("../fig/coin_g.png", width=480, height=360, type="cairo")
-barplot((table(c(x, 0:n)) - 1)/1000000, xlab="表の出た回数", ylab="", main="")
-par(new=TRUE)
-lines(0:n, gauss, col = "red", lwd = 2)
+hist(x, breaks = seq(-0.5, 100.5, length.out = 100), xlab="表の出た回数", ylab="", main="", freq=FALSE)
+curve(gauss(x, mu, sig), 0, n, col = "red", lwd = 1, add=TRUE)
+dev.off()
+
+### さいころに正規分布を重ねる
+n = 100
+x = rep(0, 1000000)
+for(i in 1:n){
+    x = x + sample(1:6, 1000000, replace=TRUE)
+}
+
+mu = 3.5 * 100
+sig = sqrt(35/12*100)
+png("../fig/dice_g.png", width=480, height=360, type="cairo")
+hist(x, breaks = seq(99.5, 600.5, length.out = 500), xlab="さいころの目の和", ylab="", main="", freq=FALSE)
+curve(gauss(x, mu, sig), 100, 600, col = "red", lwd = 2, add=TRUE)
 dev.off()
