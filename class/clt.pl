@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/opt/homebrew/opt/perl/bin/perl
 use 5.010;
 use v5.10;
 use strict;
@@ -66,7 +66,7 @@ sub tweet {
 sub fig {
   my $text = shift @_;
   my $image = Tkx::image_create_photo(-file=>$text);
-  $top->new_label(-image => $image)->g_pack;
+  $c->new_label(-image => $image)->g_pack;
 }
 
 
@@ -164,22 +164,31 @@ sub back_word {
   );
 
 &p(
-   ["tw", "皆さんが気になって仕方ない\nそのコインとサイコロで\n簡単な実験をします。"]
+   ["tw", "皆さんが気になって仕方ない\nその硬貨で簡単な実験をします。"]
   );
 
 &p(
-   ["h", "1つ目の実験"],
-   ["t", "\x{2744} コイン班\n - コインを投げる\n - 表が出たら1、裏が出たら0を記録"],
-   ["t", "\x{2744} サイコロ班\n - サイコロを投げる\n - 出た目を記録"],
+   ["h", "実験"],
+   ["t", "\x{2744} 硬貨を10回投げる\n\x{2744} 表が出た回数esを記録"],
+   ["f", "drop.png"],
   );
 &p(
    ["tw", "念のため実演します"]
   );
 
 &p(
-   ["h", "写真です"],
-   ["f", "../fig/coin_g.png"],
+   ["h", "表と裏の出た回数"],
+   ["f", "coin1.png"],
   );
 
+&p(
+   ["h", "表の出た回数"],
+   ["f", "coin2.png"]
+  );
+
+&p(
+   ["h", "正規分布を描きたす"],
+   ["f", "coin3.png"]
+  );
 
 Tkx::MainLoop;

@@ -1,0 +1,16 @@
+# 2024/1/6
+
+rm(list=ls())
+
+library(readxl)
+coin = read_excel("clt_coin.xlsx")
+
+head = coin$heads
+tail = 10 - coin$heads
+
+# 全体で表のと裏の回数を集計
+png("coin1.png", width=1000, height=800)
+c(sum(head, na.rm=TRUE), sum(tail, na.rm=TRUE)) %>%
+    barplot()
+dev.off()
+
