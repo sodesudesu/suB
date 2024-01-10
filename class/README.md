@@ -14,8 +14,5 @@
 
 ## 第〇回　二項分布の正規近似
 
-- [アンケート]()
-- [コインの記録](https://shibaura3-my.sharepoint.com/:x:/g/personal/aa21049_sic_shibaura-it_ac_jp/EVwETSYRPVdGu7O4tl5PGVABVpR-EIu1JbyqrfADUSNBhA?e=Z8lRcZ)
-- [サイコロの記録](https://shibaura3-my.sharepoint.com/:x:/g/personal/aa21049_sic_shibaura-it_ac_jp/Ea2-rO4x52RNk19RFsM5vzIB7h6m98aNeay2QkisGfbDqw?e=KhA9Vs)
-
-- [上のアンケートのリンクがうまくいかなかったらこっちのGoogle Formを使います](https://docs.google.com/forms/d/e/1FAIpQLSe3QBUrrmmTG3EmcqNl9o3Q3SLEXCXtT_Ntxkbqp-dlnrZ1Rw/closedform)
+- [アンケート](https://docs.google.com/forms/d/e/1FAIpQLSe3QBUrrmmTG3EmcqNl9o3Q3SLEXCXtT_Ntxkbqp-dlnrZ1Rw/closedform)
+- [コインの記録](https://shibaura3-my.sharepoint.com/:x:/r/personal/aa21049_sic_shibaura-it_ac_jp/Documents/coin.xlsx?d=w508d25b580d144fcbb955fbd857bcc93&csf=1&web=1&e=PPYbaR)
