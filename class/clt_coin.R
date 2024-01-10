@@ -5,6 +5,18 @@ rm(list=ls())
 library(readxl)
 library(tidyverse)
 
+# ダウンロード先のディレクトリを指定
+#download_dir <- "~/stat/class/"
+
+# ファイルのURL（HTTPS経由）
+#file_url <- "https://shibaura3-my.sharepoint.com/:x:/g/personal/aa21049_sic_shibaura-it_ac_jp/EbUljVDRgPxEu5VfvYV7zJMBXdbG1FW6MZC8HMxhKIWPtA?e=szFw5H"
+
+# wget "https://shibaura3-my.sharepoint.com/:x:/g/personal/aa21049_sic_shibaura-it_ac_jp/EbUljVDRgPxEu5VfvYV7zJMBXdbG1FW6MZC8HMxhKIWPtA?e=szFw5H"
+
+
+# ダウンロード
+#download.file(file_url, destfile = paste0(download_dir, "coin.xlsx"), mode = "wb")
+
 # excelの読み込み
 coin = read_excel("coin.xlsx")
 

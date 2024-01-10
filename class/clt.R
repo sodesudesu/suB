@@ -46,16 +46,24 @@ dev.off()
 
 
 # 指数分布（平均分散1）
-n = 100
-t = 100000
+n = 200
+t = 1000000
 
-x = rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)+ rexp(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1) + rep(t, 1)
+x = rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)
 
-png("exp100x1000000.png", width=1000, height=700, type="cairo")
+y = rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)
+
+z = rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)
+
+a = rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)+ rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1) + rexp(t, 1)
+
+x = x + y + z + a
+
+png("exp200x1000000.png", width=1000, height=700, type="cairo")
 hist(x, breaks=50, xlab="", ylab="", main="", freq=FALSE)
 dev.off()
 
-png("exp100x1000000g.png", width=1000, height=700, type="cairo")
+png("exp200x1000000g.png", width=1000, height=700, type="cairo")
 hist(x, breaks=50, xlab="", ylab="", main="", freq=FALSE)
 curve(dnorm(x, n, sqrt(n)), col = "red", lwd = 4, add=TRUE)
 dev.off()
